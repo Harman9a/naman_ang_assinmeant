@@ -1,0 +1,12 @@
+<div>
+  <button routerLink="/">Home</button>
+</div>
+<div style="display: flex">
+  <div class="Card" *ngFor="let i of products">
+    <div>Name : {{ i.name }}</div>
+    <div>Price : {{ i.price }}</div>
+    <div style="display: flex">
+      <button (click)="remove(i.id)">Remove</button>
+    </div>
+  </div>
+</div>
